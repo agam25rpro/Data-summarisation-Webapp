@@ -14,7 +14,7 @@ def index():
 def Summarize():
     if req.method == "POST":
         API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
-        headers = {"Authorization": "Bearer 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"}
+        headers = {"Authorization": "Bearer xxxxxxxxxx"}
         data = req.form["data"]
 
        
