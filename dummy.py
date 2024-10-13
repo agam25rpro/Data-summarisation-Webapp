@@ -2,7 +2,7 @@ import requests
 
 #API_URL = "https://api-inference.huggingface.co/models/sshleifer/distilbart-cnn-12-6"
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer zxxxxxxx"}
 
 
 data = '''The tower is 324 metres (1,063 ft) tall, about the same height as an 81-storey building, 
