@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action = "{{url_for('Summarize')}}" method = "POST">
+        <textarea name = "data" cols = "30" rows = "10" placeholder ="Enter your data" required = "required"></textarea>
+        <input type="range" min="20" max="1000" name = "maxL" value="100" oninput="updateValue(this.value)">
+        <span id="sliderValue">50</span> <!-- This will display the selected value -->
+
+        <script>
+            // JavaScript function to update the displayed value dynamically
+            function updateValue(val) {
+                document.getElementById('sliderValue').textContent = val;
+            }
+        </script>
+        <button type  = "reset">Clear</button>
+        <button type  = "submit">Submit</button>
+        
+   </form>
+   <h3>Summarized Tesxt:</h3>
+    <textarea rows = "10" cols = "30" name = "result">{{result}}</textarea>
+</body>
+</html>
+
